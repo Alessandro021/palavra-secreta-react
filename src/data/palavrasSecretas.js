@@ -1,0 +1,12 @@
+export const palavrasSecretas = { 
+    carro: ["Motor", "Porta", "Capô", "Pneu", "Antena", "Volante", "Farol", "Freio", "Retrovisor", "Buzina", "Câmbio", "Radiador", "Vidro", "Suspensão", "Escapamento", "Embreagem", "Bateria", "Tanque", "Chave", "Ignição", "Para-choque", "Espelho"], 
+    fruta: ["Banana", "Maçã", "Pêra", "Mamão", "Laranja", "Abacaxi", "Uva", "Melancia", "Morango", "Limão", "Kiwi", "Manga", "Cereja", "Pêssego", "Goiaba", "Amora", "Ameixa", "Caju", "Jabuticaba", "Tangerina", "Framboesa", "Pitanga"], 
+    corpo: ["Braço", "Perna", "Cérebro", "Pescoço", "Olhos", "Boca", "Nariz", "Orelha", "Pé", "Cabelo", "Dedo", "Unha", "Peito", "Barriga", "Dente", "Língua", "Cílio", "Sobrancelha", "Joelho", "Ombro", "Cotovelo", "Cintura"], 
+    computador: ["Mouse", "Teclado", "Monitor", "Gabinete", "Placa-mãe", "Memória", "Processador", "HD", "SSD", "Fonte", "Cooler", "Placa de vídeo", "Webcam", "Caixa de som", "Microfone", "Cabos", "Conector", "Wi-Fi", "Bluetooth", "Impressora", "Scanner", "Projetor"], 
+    programação: ["Linguagem", "Framework", "JavaScript", "React", "HTML", "CSS", "Python", "Java", "PHP", "C#", "Ruby", "Swift", "C++", "SQL", "Angular", "Node.js", "Bootstrap", "WordPress", "Django", "Laravel", "Vue.js", "ASP.NET"], 
+    alimento: ["Arroz", "Feijão", "Carne", "Leite", "Ovo", "Macarrão", "Batata", "Tomate", "Cenoura", "Queijo", "Peixe", "Frango", "Pão", "Manteiga", "Açúcar", "Sal", "Mel", "Chocolate", "Iogurte", "Abacate", "Sorvete", "Melancia", "Café"], 
+    animal: ["Cachorro", "Gato", "Leão", "Elefante", "Girafa", "Tigre", "Cavalo", "Vaca", "Pato", "Coruja", "Borboleta", "Sapo", "Pinguim", "Golfinho", "Coelho", "Macaco", "Papagaio", "Galinha", "Jacaré", "Cobra", "Tartaruga", "Peixe"], 
+    país: ["Brasil", "Estados Unidos", "Canadá", "México", "França", "Alemanha", "Espanha", "Itália", "Japão", "China", "Índia", "Austrália", "Argentina", "Chile", "Portugal", "Inglaterra", "Rússia", "Suécia", "Holanda", "África do Sul", "Egito", "Israel"], 
+    profissão: ["Médico", "Engenheiro", "Professor", "Advogado", "Arquiteto", "Farmacêutico", "Enfermeiro", "Dentista", "Policial", "Bombeiro", "Piloto", "Chef", "Ator", "Cantor", "Dançarino", "Jornalista", "Designer", "Programador", "Empresário", "Astrônomo", "Psicólogo", "Veterinário"], 
+    esporte: ["Futebol", "Basquete", "Tênis", "Vôlei", "Natação", "Ginástica", "Atletismo", "Boxe", "Handebol", "Golfe", "Surfe", "Rugby", "Hóquei", "Ciclismo", "Skate", "Judô", "Caratê", "Xadrez", "Esgrima", "Badminton", "Polo aquático", "Escalada"], 
+  } 
