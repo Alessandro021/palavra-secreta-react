@@ -1,7 +1,7 @@
 import { useState, useRef } from "react"
 import "./Game.css"
 
-export const Game = ({verificarLetra, palavraEscolhida, categoriaEscolhida, letras, adivinhouLetra, letrasErradas, chances, pontuacao}) => {
+export const Game = ({verificarLetra, categoriaEscolhida, letras, adivinhouLetra, letrasUtilizadas, chances, pontuacao}) => {
 
     const [letra, setLetra] = useState("")
     const inputLetraRef = useRef(null)
@@ -45,7 +45,7 @@ export const Game = ({verificarLetra, palavraEscolhida, categoriaEscolhida, letr
            </div>
            <div className="letrasErradasContainer">
                 <p>Letras já utilizadas: </p>
-                {letrasErradas.map(((letra, index) => (
+                {letrasUtilizadas.map(((letra, index) => (
                     <span key={index}>{letra}, </span>
                 )))}
            </div>

@@ -31,6 +31,7 @@ const App = () => {
     const [letrasErradas, setLetrasErradas] = useState([])
     const [chances, setChances] = useState(qntsDeChances)
     const [pontuacao, setPontuacao] = useState(0)
+    const [letrasUtilizadas, setLetrasUtilizadas] = useState([])
 
 
 
@@ -67,11 +68,14 @@ const App = () => {
             setLetrasErradas(letrasErradasAtual => [...letrasErradasAtual, normalizarLetra])
             setChances(atual => atual - 1)
         }
+
+        setLetrasUtilizadas(atual => [...atual, letra])
     }
 
     const limparEstadoDasLetras = () => {
         setAdivinhouLetra([])
         setLetrasErradas([])
+        setLetrasUtilizadas([])
     }
 
    useEffect(() => {
@@ -83,10 +87,8 @@ const App = () => {
 
    useEffect(() => {
         const letrasUnicas = [... new Set(letras)];
-        console.log(adivinhouLetra.length)
         
         if(adivinhouLetra.length > 0 && adivinhouLetra.length === letrasUnicas.length) {
-            console.log("passou")
             setPontuacao(atual => atual += 100)
             iniciarJogo()
         }
@@ -102,16 +104,15 @@ const App = () => {
             {estagioGame === "start" && <StartScreen  iniciarJogo={iniciarJogo}/>}
             {estagioGame === "game" && 
             <Game 
-                verificarLetra={verificarLetra} 
-                palavraEscolhida={palavraEscolhida} 
+                verificarLetra={verificarLetra}  
                 categoriaEscolhida={categoriaEscolhida}
                 letras={letras}
                 adivinhouLetra={adivinhouLetra}
-                letrasErradas={letrasErradas}
+                letrasUtilizadas={letrasUtilizadas}
                 chances={chances}
                 pontuacao={pontuacao}
             />}
-            {estagioGame === "end" && <GameOver reiniciarJogo={reiniciarJogo} pontuacao={pontuacao}/> }
+            {estagioGame === "end" && <GameOver reiniciarJogo={reiniciarJogo} pontuacao={pontuacao} palavraEscolhida={palavraEscolhida}/>}
         </div>
     );
 }
